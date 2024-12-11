@@ -141,3 +141,17 @@ footer {
     color: #ecf0f1;
     padding: 16px 0;
 }
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    color: #ecf0f1;
+    transition: 0.1s;
+}
+
+footer a:hover {
+    color: #c3c9ca;
+}
