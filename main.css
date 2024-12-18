@@ -202,6 +202,7 @@ footer a:hover {
 
     #store-front {
         width: 100%;
+        margin-right: 0;
     }
 
     #products .container {
