@@ -15,15 +15,16 @@
         <div class="container">
             <h1>Games Shop</h1>
             <nav>
-                <ul>
+                <ul class="header-options">
                     <li>
                         <a href="#about">Sobre a loja</a>
                     </li>
                     <li>
-                        <a href="#contact">Contato</a>
+                        <a href="#products">Produtos</a>
                     </li>
                 </ul>
             </nav>
+            <button>=</button>
         </div>
     </header>
 
@@ -47,45 +48,33 @@
         </div>
     </section>
 
-    <section id="contact">
+    <section id="products">
         <div class="container">
-            <h2>Contato</h2>
-            <div class="contact-methods">
+            <h2>Produtos</h2>
+            <div class="produtos">
                 <div>
-                    <h3>Fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required>
-                        <input type="email" placeholder="Seu e-mail" required>
-                        <input type="tel" placeholder="Seu telefonte (opcional)">
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
+                    <img src="./images/1.jpg">
+                    <h3>The Last of Us</h3>
+                    <p>The Last of Us é um jogo de sobrevivência pós-apocalíptico que acompanha Joel e Ellie em uma emocionante jornada por um mundo devastado.</p>
+                    <button>Adicionar ao carrinho</button>
                 </div>
                 <div>
-                    <h3>Nos acompanhe</h3>
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" title="Siga-nos no Instagram">
-                                <img src="./images/instagram.png" alt="Logo do Instagram">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Siga-nos no Facebook">
-                                <img src="./images/facebook.png" alt="Logo do Facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" title="Visite nosso canal do YouTube">
-                                <img src="./images/youtube.png" alt="Logo do YouTube">
-                            </a>
-                        </li>
-                    </ul>
+                    <img src="./images/2.jpg">
+                    <h3>Days Gone</h3>
+                    <p>Days Gone é um jogo de sobrevivência em mundo aberto que segue Deacon St. John enfrentando hordas de zumbis em um cenário pós-apocalíptico.</p>
+                    <button>Adicionar ao carrinho</button>
                 </div>
                 <div>
-                    <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScript nº 123, vila HTML - São Paulo - SP
-                    </p>
+                    <img src="./images/3.jpg">
+                    <h3>Bloodborne</h3>
+                    <p>Bloodborne é um jogo de ação e terror gótico e sinistro onde caçadores enfrentam horrores cósmicos em uma cidade amaldiçoada.</p>
+                    <button>Adicionar ao carrinho</button>
+                </div>
+                <div>
+                    <img src="./images/4.jpg">
+                    <h3>Death Stranding</h3>
+                    <p>Death Stranding é um jogo de mundo aberto onde você conecta sobreviventes em um mundo pós-apocalíptico como o entregador Sam Porter.</p>
+                    <button>Adicionar ao carrinho</button>
                 </div>
             </div>
         </div>
@@ -101,5 +90,21 @@
             </p>
         </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).resize(function () {
+                if ($(window).width() > 625) {
+                    $('.header-options').css('display', 'flex'); // Garante que o menu reapareça
+                } else {
+                    $('.header-options').css('display', 'none'); // Esconde em telas menores
+                }
+            });
+            $('header button').click(function () {
+                $('.header-options').slideToggle();
+            });
+    });
+    </script>
 </body>
 </html>
