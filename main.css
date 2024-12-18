@@ -124,6 +124,7 @@ section p {
 .produtos p {
     font-size: 15px;
     text-indent: 32px;
+    height: 70px;
 }
 
 .produtos button {
@@ -236,6 +237,10 @@ footer a:hover {
         padding: 0 16px;
     }
 
+    .produtos p {
+        height: 85px;
+    }
+
     footer .container {
         text-align: center;
         display: block;
@@ -266,6 +271,10 @@ footer a:hover {
         grid-template-columns: repeat(2, 50%);
         column-gap: 1%;
         row-gap: 1%;
+    }
+
+    .produtos p {
+        height: 85px;
     }
 
     footer .container {
